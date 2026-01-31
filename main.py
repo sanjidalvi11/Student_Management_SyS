@@ -57,7 +57,7 @@ while True:
             case _:  # Invalid choice
                 print("Invalid choice. Please enter 1-5.")
 
-    except Exception as e:
+    except Exception as error:
         print("="*80)
-        print(f"Error: {e}")
+        print(f"Error: {error}")
         print("="*80)

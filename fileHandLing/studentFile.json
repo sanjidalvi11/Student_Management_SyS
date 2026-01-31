@@ -1,0 +1,26 @@
+[
+    {
+        "name": "sajid",
+        "roll": 103,
+        "email": "gmail.com",
+        "deparment": "cse"
+    },
+    {
+        "name": "korim",
+        "roll": 104,
+        "email": "gmail.com",
+        "deparment": "cse"
+    },
+    {
+        "name": "alvi",
+        "roll": 100,
+        "email": "gmail.com",
+        "deparment": "cse"
+    },
+    {
+        "name": "alvi",
+        "roll": 105,
+        "email": "alvi@gmail.com",
+        "deparment": "cse"
+    }
+]

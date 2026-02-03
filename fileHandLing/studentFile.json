@@ -1,32 +1,8 @@
 [
     {
-        "name": "sajid",
-        "roll": 103,
-        "email": "gmail.com",
-        "deparment": "cse"
-    },
-    {
-        "name": "korim",
-        "roll": 104,
-        "email": "gmail.com",
-        "deparment": "cse"
-    },
-    {
-        "name": "alvi",
-        "roll": 100,
-        "email": "gmail.com",
-        "deparment": "cse"
-    },
-    {
-        "name": "alvi",
-        "roll": 105,
-        "email": "alvi@gmail.com",
-        "deparment": "cse"
-    },
-    {
-        "name": "alvi",
-        "roll": 1000,
-        "email": "gmail.com",
+        "name": "jim",
+        "roll": 12346,
+        "email": "aliv@gmail.com",
         "deparment": "cse"
     }
 ]

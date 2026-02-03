@@ -1,7 +1,19 @@
 import json
+import re
 
 #Helpar funtion
 #string valu Input  funtion
+
+#Email validetion chaker
+def inputEmailChacker(msg:str):
+    while True:
+        Email=input("Enter Email:").strip()
+        pattern = r"^\w+@(gmail|yahoo|email)\.com$"
+        if re.match(pattern,Email):
+            break
+        else:
+            print("--- Invaliad Email ---")
+    return Email
 def StrValuChaker(msg:str):
     
        while True:
@@ -24,18 +36,17 @@ def IntValuchacker(msg:str):
     
       while True:
           try:
-           roll = int(input(msg))
-           if roll=="":
-               print("--- Empty Input ---")
-           if 99 <= roll <= 10001:
+           roll = input(msg)
+           pattern=r"^\d{5}$"
+           if re.match(pattern,roll):
             break
            else:
-            print("Enter a valid roll inside the range (99-10001)")
+            print("Enter a valid roll inside ( Must 5 number) ")
         
           except Exception as valueror:
-           print("--- Plase Typ Intger valu ---")  
+           print(valueror)  
            
-      return roll    # if all condition is True Return valo to main funtion when call 
+      return roll    # if all condition is True Return valu to main funtion when call 
       
 
 

@@ -1,5 +1,5 @@
 from StudentManagementSys import S_M_S
-from utlisfile import IntValuchacker,StrValuChaker
+from utlisfile import IntValuchacker,StrValuChaker,inputEmailChacker
 # =========================
 # Initialize Student Management System
 # =========================
@@ -32,8 +32,8 @@ while True:
             case "1":  # Add student
                 
                 name=StrValuChaker(msg="Enter Student Name: ")
-                roll = IntValuchacker(msg="Enter Roll Number: ")
-                email = StrValuChaker(msg="Enter Email: ")
+                roll = int(IntValuchacker(msg="Enter Roll Number: "))
+                email = inputEmailChacker(msg="Enter Email: ")
                 deparment = StrValuChaker(msg="Enter Department: ")
                 sms.addStudent(name=name, roll=roll, email=email, deparment=deparment)
 
@@ -42,10 +42,11 @@ while True:
 
             case "3":  # Search a student
                 roll = IntValuchacker(msg="Enter Roll Number: ")
+                roll=int(roll)
                 sms.SearchStudent(roll=roll)
 
             case "4":  # Remove a student
-                roll = IntValuchacker(msg="Enter Roll Number: ")
+                roll = int(IntValuchacker(msg="Enter Roll Number: "))
                 sms.Remove_student(roll=roll)
 
             case "5":  # Exit
